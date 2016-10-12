@@ -1,0 +1,23 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+// endbower
+
+@import 'reset';
+@import 'preloader';
+@import 'fonts';
+@import 'vars';
+@import 'style';
+@import 'mixins';
+@import 'media';
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*-----------------------------------------------------*/

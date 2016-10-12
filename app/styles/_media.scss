@@ -1,0 +1,129 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+	.item-caption {
+		p {
+			font-size: em(20);
+			margin: 0;
+			margin-top: 5px;
+		}
+	}
+
+	.item-price {
+		p {
+			font-size: em(17);
+			margin: 0;
+			margin-top: 5px;
+		}
+	}
+
+	.menu {
+		a {
+			font-size: em(14);
+			margin: 10px 15px;
+		}
+	}
+
+}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+		body {
+			font-size: 13px;
+		}
+
+		header {
+			padding-top: 17px;
+		}
+
+		.header-right {
+			padding-top: 15px;
+		}
+
+		.header-menu {
+			background-color: transparent;
+		}
+
+		.menu {
+			display: none;
+			//position: absolute;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 120vh;
+			z-index: 150;
+			a {
+				display: block;
+				text-align: center;
+				line-height: 60px;
+				border-bottom: 1px solid #d6d6d6;
+				margin: 0 60px;
+			}
+		}
+
+		.mob-menu-btn {
+			display: inline-block;
+		}
+
+		.slider {
+			margin-top: 15px;
+		}
+
+		.padding {
+			padding: 20px 0;
+		}
+
+		.item-caption {
+			p {
+				text-align: center;
+			}
+		}
+
+		.item-price {
+			p {
+				text-align: center;
+			}
+		}
+
+		.contact-text {
+			h5 {
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+
+	
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+		.item-price {
+			padding-bottom: 30px;
+		}
+
+		.call-text {
+			margin: 0;
+			text-align: center;
+			p {
+				font-size: em(28);
+			}
+		}
+
+		.call-logo {
+			margin: 0;
+			img {
+				margin-top: 15px;
+			}
+		}
+
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}
