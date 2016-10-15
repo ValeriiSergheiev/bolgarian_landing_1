@@ -11,16 +11,16 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="../bower_components/nivoslider/nivo-slider.css">
-  <link rel="stylesheet" href="../bower_components/CreativeLinkEffects/css/component.css">
+  <link rel="stylesheet" href="/bower_components/nivoslider/nivo-slider.css">
+  <link rel="stylesheet" href="/bower_components/CreativeLinkEffects/css/component.css">
   <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
   <link rel="stylesheet" href="/bower_components/sweetalert/dist/sweetalert.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
   
-  <!-- <link rel="stylesheet" href="../bower_components/nivoslider/nivo-slider.css">
-  <link rel="stylesheet" href="../bower_components/CreativeLinkEffects/css/component.css">
+  <!-- <link rel="stylesheet" href="/bower_components/nivoslider/nivo-slider.css">
+  <link rel="stylesheet" href="/bower_components/CreativeLinkEffects/css/component.css">
   <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
   <link rel="stylesheet" href="/bower_components/sweetalert/dist/sweetalert.css" /> -->
   
@@ -52,7 +52,7 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="header-left">
-                  <div class="header-logo"><p>ЛОГО</p></div>
+                  <div class="header-logo"><img src="images/logo.png" class="img-responsive center-block" alt="logo"></div>
                   <div class="header-logo-text">
                     <p>жилищно-строительные</p>
                     <p>кооперативы</p>
@@ -63,15 +63,17 @@
               <div class="col-md-6">
                 <div class="header-center">
                   <div class="slogan"><p>Хотите европейское жильё в Киеве?</p></div>
-                  <a class="header-btn" href="#">Заказать обратный звонок</a>
+                  <a class="header-btn open-popup-link" href="#call-popup">Заказать обратный звонок</a>
                 </div>
               </div>
 
               <div class="col-md-3">
                 <div class="header-right">
+                  <p>+38 (044) 444-44-44</p>
                   <p>+38 (067) 777-77-77</p>
+                  <p>+38 (050) 555-55-55</p>
                   <p>info@mail.ua</p>
-                  <p>Киев, ул. Ххххххх, д.101</p>
+                  <p>Киев, ул. Соломенская, д.101</p>
                 </div>
               </div>
             </div>
@@ -83,7 +85,7 @@
             <div class="row">
               <div class="col-md-12">
                 <nav class="menu cl-effect-14">
-                  <a href="#cup">проекты</a>
+                  <a href="#cup">квартиры</a>
                   <a href="#plate">галерея</a>
                   <a href="#magnet">цены</a>
                   <a href="#other">акции</a>
@@ -124,7 +126,8 @@
              <div class="col-md-6">
                <div class="about-us-left">
                  <h4>О компании</h4>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sunt hic expedita placeat voluptatem illum recusandae molestias quo vitae perspiciatis quis, similique nesciunt minima harum architecto. Quis at libero sequi expedita, nesciunt blanditiis eaque mollitia, beatae eveniet sed tempore sapiente iste voluptates dolorum molestiae ducimus, id sint maiores fugit quo.</p>
+                 <p>Обслуживающий кооператив “Жилищно-строительный кооператив” (ОК “ЖСК”) — юридическое лицо, созданное физическими и/или юридическими лицами, которые добровольно объединились на основе объединения их имущественных паевых взносов для участия в строительстве жилого дома (домов) и последующей его (их) эксплуатации. ОК «ЖСК» является некоммерческой организацией, целью которой является удовлетворение потребностей его членов в жилье.</p>
+                 <p>Поскольку общая касса кооперативов обходится без средств кредитных организаций с их весомыми процентами, то квартиры для членов кооперативов в итоге будут стоить примерно вдовое дешевле, чем для тех же заемщиков ипотеки. Соответственно главным преимуществом вступления в ОК “ЖСК” является наиболее дешевый способ покупки жилья в сравнение с его приобретением в кредит. Помимо этого жилищный кооператив возводит жилье без разных посредников, что вкупе с налоговыми вычетами также существенно уменьшает его себестоимость.</p>
                </div>
              </div>
 
@@ -132,20 +135,22 @@
                <div class="about-us-right">
                  <h4>Наши преимущества</h4>
                  <ul>
-                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing consectetur adipisicing</li>
-                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing amet, consectetur adipisicing</li>
-                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing sectetur adipisicing</li>
-                   <li>Lorem ipsum dolor sit amet, consectetur adipisicing Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                   <li>ОК «ЖСК» имеет право принять решение о смене генподрядчика строительства в любой момент</li>
+                   <li>Застройщику приходится соблюдать не только законодательные акты, но и считаться с уставом кооператива и мнением пайщиков</li>
+                   <li>Члены кооператива могут вносить паи частями согласно утвержденному графику рассрочки, не оплачивая при этом проценты</li>
+                   <li>Если застройщик объявил себя банкротом, члены ОК «ЖСК» могут самостоятельно достроить дом</li>
+                   <li>Паевые взносы не облагаются налогами</li>
+                   <li>Член ОК «ЖСК» может выплачивать свой пай уже живя в квартире</li>
+                   <li>Используются финансовые продукты и услуги банков, позволяющие оптимизировать строительство жилья для членов ЖСК</li>
+                   <li>Используются качественные строительные, сертифицированные строительные материалы для строительства домов</li>
+                   <li>Используются профессионалы для выполнения работ</li>
                  </ul>
                </div>
              </div>
            </div>
 
            <div class="section-btn-wrapper">
-             <a href="images/our-team-unsaturated-noise.jpg" class="section-btn" download>Скачать презентацию</a>
+             <a href="presentation_ukr.pdf" class="section-btn" download>Скачать презентацию</a>
            </div>
 
          </div>
@@ -155,7 +160,7 @@
      <section id="cup" class="cup bg-fixed">
        <div class="overlay padding">
          <div class="container">
-           <h3>Проекты</h3>
+           <h3>Квартиры</h3>
            <div class="section-title">
             <div class="lines">
               <hr>
@@ -340,8 +345,13 @@
            <h3>Нужна <span class="bold">бесплатная</span> консультация?</h3>
            <form id="form-consult">
              <div class="input-group center-block">
-               <input id="faq-phone" type="text" placeholder="Ваш телефон:..." required>
-               <span><button>ДА!</button></span>
+               <!-- Hidden Required Fields -->
+               <input type="hidden" name="project_name" value="Болгарский проект">
+               <input type="hidden" name="admin_email" value="voodoo.liamg@gmail.com">
+               <input type="hidden" name="form_subject" value="Перезвонить клиенту и проконсультировать - Коттедж №1">
+               <!-- END Hidden Required Fields -->
+               <input id="faq-phone" name="Телефон" type="text" placeholder="Ваш телефон:..." required>
+               <span><button form="form-consult">ДА!</button></span>
              </div>
            </form>
            <p>Закажите <span class="bold">бесплатную консультацию</span> нашего специалиста</p>
@@ -413,24 +423,28 @@
       </div>
 
       <form id="map-form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Болгарский проект">
+        <input type="hidden" name="admin_email" value="voodoo.liamg@gmail.com">
+        <input type="hidden" name="form_subject" value="Сообщение с лендинга - Коттедж №1">
+        <!-- END Hidden Required Fields -->
         <div class="row">
-
           <div class="col-md-6">
             <div class="map-form-left">
-              <input type="text" placeholder="Имя*" required>
-              <input type="email" placeholder="E-mail*" required>
-              <input id="contact-phone" type="tel" placeholder="Телефон (по желанию)">
+              <input type="text" name="Имя" placeholder="Имя*" required>
+              <input type="email" name="E-mail" placeholder="E-mail*" required>
+              <input id="contact-phone" name="Телефон" type="tel" placeholder="Телефон (по желанию)">
             </div>
           </div>
           
           <div class="col-md-6">
             <div class="map-form-right">
-              <textarea></textarea>
-              <button>отправить сообщение</button>
+              <textarea name="Сообщение" placeholder="Сообщение*" required></textarea>
+              <button form="map-form">отправить сообщение</button> <!-- указываем id формы для кнопки -->
             </div>
           </div>
-
         </div>
+        <!-- <button>отправить сообщение</button> --> <!-- button must be common -->
       </form>
 
     </div>
@@ -443,7 +457,7 @@
        <div class="row">
          <div class="col-md-12">
            <nav class="menu cl-effect-14">
-            <a href="#cup">проекты</a>
+            <a href="#cup">квартиры</a>
             <a href="#plate">галерея</a>
             <a href="#magnet">цены</a>
             <a href="#other">акции</a>
@@ -460,7 +474,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="footer-left">
-            <div class="footer-logo"><p>Инфо</p></div>
+            <div class="footer-logo"><img src="images/logo.png" alt="logo"></div>
             <div class="footer-logo-text">
               <p>жилищно-строительные</p>
               <p>кооперативы</p>
@@ -479,7 +493,9 @@
 
         <div class="col-md-3">
           <div class="footer-right">
+            <p>+38 (044) 444-44-44</p>
             <p>+38 (067) 777-77-77</p>
+            <p>+38 (050) 555-55-55</p>
             <p>info@mail.ua</p>
             <p>Киев, ул. Хххххххх, д.101</p>
           </div>
@@ -491,6 +507,26 @@
 
 <div class="scroll-top">
   <span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span>
+</div>
+
+<!-- Magnific Popup -->
+<div id="call-popup" class="white-popup mfp-hide">
+  <p>Закажите обратный звонок и наш специалист свяжется с Вами</p>
+  <div class="section-title">
+    <div class="lines">
+      <hr>
+    </div>
+  </div>
+  <form id="call-us-form">
+    <!-- Hidden Required Fields -->
+    <input type="hidden" name="project_name" value="Болгарский проект">
+    <input type="hidden" name="admin_email" value="voodoo.liamg@gmail.com">
+    <input type="hidden" name="form_subject" value="Перезвонить клиенту - Коттедж №1">
+    <!-- END Hidden Required Fields -->
+    <input type="text" name="Имя" placeholder="Имя">
+    <input id="call-us-phone" type="tel" autocomplete="off" name="Телефон" placeholder="Телефон*" required>
+    <button>заказать обратный звонок</button>      
+  </form>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -36,6 +36,10 @@
 			padding-top: 17px;
 		}
 
+		.header-center {
+			padding-top: 15px;
+		}
+
 		.header-right {
 			padding-top: 15px;
 		}
@@ -120,7 +124,10 @@
 
 	/* Extra Small Devices, Phones */ 
 	@media only screen and (max-width : 480px) {
-
+		.header-btn {
+			font-size: 16px;
+			padding: 10px;
+		}
 	}
 
 	/* Custom, iPhone Retina */ 

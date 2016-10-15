@@ -86,14 +86,57 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	/* Mask Inputs */
+	$('#faq-phone').mask('+38 (999) 999-99-99');
+	$('#contact-phone').mask('+38 (999) 999-99-99');
+	$('#call-us-phone').mask('+38 (999) 999-99-99');
+
+	/*Magnific Popup*/
+	$('.open-popup-link').magnificPopup({
+		type:'inline',
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
+
+	//E-mail Ajax Send
+	$('#map-form, #form-consult').submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: 'POST',
+			url: 'mail.php', //Change
+			data: th.serialize()
+		}).done(function() {
+			$.magnificPopup.close();
+			swal('Спасибо!', 'Мы свяжемся с Вами', 'success');
+			setTimeout(function() {
+				// Done Functions
+				th.trigger('reset');
+			}, 1000);
+		});
+		return false;
+	});
+
+	$('#call-us-form').submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: 'POST',
+			url: 'mail.php', //Change
+			data: th.serialize()
+		}).done(function() {
+			th.trigger('reset');
+			$.magnificPopup.close();
+			swal('Спасибо!', 'Мы свяжемся с Вами', 'success');
+			setTimeout(function() {
+				// Done Functions
+			}, 1000);
+		});
+		return false;
+	});
+
 	/* Preloader */
 	setTimeout(function(){
 		$('body').addClass('loaded');
-	}, 3000);
-
-	/* Mask Inputs */
-	$("#faq-phone").mask("+38 (999) 999-99-99");
-	$("#contact-phone").mask("+38 (999) 999-99-99");
+	}, 3300);
 
 }); /* End Document(ready) */
 
