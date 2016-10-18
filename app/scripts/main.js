@@ -1,9 +1,9 @@
 /* Slider */
 $(window).on('load', function() {
-	/*$('#slider').nivoSlider({
+	$('#slider').nivoSlider({
 		directionNav: false,
 		pauseOnHover: false
-	});*/
+	});
 });
 
 /*----------------------------------*/
@@ -98,6 +98,61 @@ jQuery(document).ready(function($) {
 		mainClass: 'mfp-fade'
 	});
 
+	/* Magnific image */
+	$('.apartament-item a, .house-plan-item a').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			easing: 'ease-in-out'
+		}
+	});
+
+	$('.house-plan-item a').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			easing: 'ease-in-out'
+		},
+		gallery: {
+			enabled: true
+		}
+	});
+
+	$('.flat-gallery-item a').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			easing: 'ease-in-out'
+		},
+		gallery: {
+			enabled: true
+		}
+	});
+
 	//E-mail Ajax Send
 	$('#map-form, #form-consult').submit(function() { //Change
 		var th = $(this);
@@ -137,6 +192,12 @@ jQuery(document).ready(function($) {
 	setTimeout(function(){
 		$('body').addClass('loaded');
 	}, 3300);
+
+	//Bottstrap tabs
+	$('#flat-tabs a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+	})
 
 }); /* End Document(ready) */
 

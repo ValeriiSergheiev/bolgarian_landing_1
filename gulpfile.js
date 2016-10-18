@@ -60,9 +60,9 @@ gulp.task('lint:test', () => {
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if('*.js', $.uglify()))
+    /*.pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))*/
     .pipe(gulp.dest('dist'));
 });
 
@@ -173,4 +173,16 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
+});
+
+/* Sprites -----------------------------------------------*/
+var spritesmith = require('gulp.spritesmith');
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('app/images/sprites/*.png').pipe(spritesmith({
+    imgName: '../images/sprite.png',
+    cssName: '_sprite.scss'
+  }));
+  spriteData.img.pipe(gulp.dest('app/images/'));
+  spriteData.css.pipe(gulp.dest('app/styles/'));
 });

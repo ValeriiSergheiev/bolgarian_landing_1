@@ -9,8 +9,9 @@ $icon-font-path: '../fonts/';
 @import 'preloader';
 @import 'fonts';
 @import 'vars';
-@import 'style';
 @import 'mixins';
+@import 'sprite';
+@import 'style';
 @import 'media';
 
 .browserupgrade {
