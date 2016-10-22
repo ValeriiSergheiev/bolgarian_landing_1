@@ -82,7 +82,7 @@ header {
 }
 
 .header-center {
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 .header-btn {
@@ -110,18 +110,26 @@ header {
 	p {
 		color: #4a4a4a;
 		font-size: em(27);
+		&:last-child {
+			font-size: em(18);
+			margin-top: 6px;
+		}
 	}
 }
 
 .header-right {
-	p:first-child {
+	/*p:first-child {
 		font-size: em(23);
 		color: #2b2b2b;
-	}
+	}*/
 	p {
-		font-size: em(20);
+		font-size: em(21);
 		color: $light-grey-text;
 		margin-top: 3px;
+		span {
+			color: #00923F;
+			font-weight: bold;
+		}
 	}
 }
 
@@ -465,6 +473,10 @@ header {
 		span {
 			text-transform: uppercase;
 		}
+		b {
+			color: #00923F;
+			font-weight: bold;
+		}
 	}
 }
 
@@ -493,6 +505,8 @@ header {
 		font-family: 'raleway-regular';
 		font-size: em(16);
 		padding: 10px 20px;
+		border: 1px solid #ccc;
+		border-radius: 0;
 	}
 	button {
 		@extend .header-btn;
@@ -533,10 +547,17 @@ footer {
 	padding: 15px 0;
 }
 
+.footer-left {
+	text-align: center;
+}
+
 .footer-logo {
 	@extend .header-logo;
+	display: inline-block;
+	text-align: center;
 	img {
 		transform: scale(.7);
+		text-align: center;
 	}
 	p {
 		color: $footer-text;
@@ -556,6 +577,9 @@ footer {
 	p {
 		color: $footer-text;
 		font-size: em(21);
+		&:last-child {
+			font-size: em(21);
+		}
 	}
 }
 

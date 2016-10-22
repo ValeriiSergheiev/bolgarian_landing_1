@@ -1,9 +1,9 @@
 /* Slider */
 $(window).on('load', function() {
-	$('#slider').nivoSlider({
+	/*$('#slider').nivoSlider({
 		directionNav: false,
 		pauseOnHover: false
-	});
+	});*/
 });
 
 /*----------------------------------*/
@@ -204,10 +204,19 @@ jQuery(document).ready(function($) {
 /* Google Map*/
 var map;
 function initMap() {
+	var myLatLng = {lat: 50.466930, lng: 30.351763};
 	map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 50.501868, lng: 30.498139},
-		zoom: 17,
+		center: myLatLng,
+		zoom: 15,
+		center: myLatLng,
 		scrollwheel: false
 	});
-};
 
+	var image = '../images/marker.png';
+	var marker = new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		icon: image,
+		title: 'Болгарский коттедж!'
+	});
+};
