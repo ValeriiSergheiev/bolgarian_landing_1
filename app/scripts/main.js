@@ -201,7 +201,7 @@ jQuery(document).ready(function($) {
 
 	//Parallax
 	$('.entry').parallax({imageSrc: '../images/testimonials.jpg'});
-	$('.faq').parallax({imageSrc: '../images/call-centre.jpg'});
+	//$('.faq').parallax({imageSrc: '../images/call-centre.jpg'});
 
 }); /* End Document(ready) */
 
