@@ -1,9 +1,9 @@
 /* Slider */
 $(window).on('load', function() {
-	/*$('#slider').nivoSlider({
+	$('#slider').nivoSlider({
 		directionNav: false,
 		pauseOnHover: false
-	});*/
+	});
 });
 
 /*----------------------------------*/
@@ -198,6 +198,10 @@ jQuery(document).ready(function($) {
 		e.preventDefault()
 		$(this).tab('show')
 	})
+
+	//Parallax
+	$('.entry').parallax({imageSrc: '../images/testimonials.jpg'});
+	$('.faq').parallax({imageSrc: '../images/call-centre.jpg'});
 
 }); /* End Document(ready) */
 
